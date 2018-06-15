@@ -1,5 +1,10 @@
 node {
-	overrideIndexTriggers(true)
+	properties(
+		[
+			overrideIndexTriggers(true)
+		]
+	)
+
     stage('Build') {	
         steps {
 			echo 'Hello World 1'
